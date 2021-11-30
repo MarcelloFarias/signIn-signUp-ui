@@ -80,6 +80,28 @@ main {
     color: rgba(0, 0, 0, 0.4);
 }
 
+.input-password {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#input-password {
+    border-right: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.eye {
+    border: solid 1px #FE8F8F;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-left: 0px;
+    padding: 0.7rem;
+    color: #FE8F8F;
+    cursor: pointer;
+}
+
 .form-footer {
     display: flex;
     flex-direction: column;
