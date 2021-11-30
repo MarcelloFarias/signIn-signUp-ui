@@ -24,7 +24,9 @@
 
                 <label for="#input-password">Password:</label>
                 <div class="input-field">
-                    <input type="email" placeholder="Type Your Password" id="input-password">
+                    <div class="input-password">
+                        <input type="password" placeholder="Type Your Password" id="input-password"><i onclick="toggle()" class="fas fa-eye eye"></i>
+                    </div>
                 </div>
 
                 <div class="main-buttons">
@@ -41,5 +43,23 @@
             </form>
         </div>
     </main>
+
+    <script>
+        let eye = document.querySelector('.eye'),
+            inputPassword = document.querySelector('#input-password'),
+            enabled = false;
+
+        function toggle() {
+            if(enabled) {
+                inputPassword.setAttribute('type', 'password');
+                eye.style.color = '#FE8F8F'
+                enabled = false;
+            }else {
+                inputPassword.setAttribute('type', 'true');
+                eye.style.color = '#FF5C58';
+                enabled = true;
+            }
+        }
+    </script>
 </body>
 </html>
