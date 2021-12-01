@@ -15,12 +15,6 @@ main {
     margin: 15px 0;
 }
 
-#input-confirm {
-    border-right: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-}
-
 @media (max-width: 930px) {
     main {
         grid-template-columns: 100vw;
